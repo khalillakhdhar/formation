@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Mon premier formulaire</title>
+<style>
+    td {
+        text-align: center;
+    }
+    .champ
+    {
+        width: 100%;
+        height: 30px;
+margin-bottom: 4px;
+border-radius: 4px;
+
+
+    }
+</style>
+</head>
+<body>
+    <form>
+<table  align="center">
+<tr><td colspan="2"><h1>Demande de stage</h1></td></tr>
+<tr>
+    <td>Nom</td>
+    <td><input type="text" class="champ"  placeholder="veuillez saisir votre nom" pattern="[A-Za-z éè]{3,20}" required name="nom"></td></tr>
+<tr>
+    <td>Prénom</td>
+    <td><input type="text" class="champ" placeholder="veuillez saisir votre prénom" pattern="[A-Za-z éè]{3,20}" required name="prenom"></td></tr>
+<tr>
+    <td>Adresse</td>
+    <td><textarea class="champ" placeholder="veuillez saisir votre adresse" required></textarea></td>
+</tr>
+<tr>
+    <td>Date de naissance</td>
+    <td><input class="champ" required type="date" name="date"></td>
+</tr>
+<tr>
+    <td>code postale</td>
+    <td><input class="champ" required type="text" pattern="[0-9]{4}" name="code"></td>
+</tr>
+<tr>
+    <td>Bac+?</td>
+    <td><input class="champ" required type="number" min="1" max="12" name="bac"></td>
+</tr>
+<tr>
+    <td>Redoublement</td>
+    <td><input  type="radio" name="r">oui<br><input type="radio" name="r">non
+</tr>
+<tr>
+    <td>Email</td>
+    <td><input class="champ" required type="email" name="email"></td>
+</tr>
+<tr>
+    <td>Mot de passe:</td>
+    <td><input class="champ" required type="password" name="mdp"></td>
+</tr>
+<tr>
+    <td>Linkedin</td>
+    <td><input class="champ" type="url"  name="linkedin"></td>
+</tr>
+<tr>
+    <td>Type de stage</td>
+    <td><select class="champ"><option>ouvrier</option><option>technicien</option><option>ingénieur</option></select></td>
+</tr>
+<tr>
+    <td><input type="submit" value="ajouter"></td>
+    <td><input type="reset" value="annuler"></td>
+</tr>
+
+</table>
+</form>
+
+</body>
+
+
+
+
+
+</html>
